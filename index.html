@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <script>
+    let control = 1;
+
+    while (control == 1) {
+      let num1 = parseInt(prompt("Ingrese numero 1"));
+      let num2 = parseInt(prompt("Ingrese numero 2"));
+      let operacion = prompt("Ingrese la operacion");
+
+      function realizarOperacion(a, b, c) {
+        if (c == "suma") {
+          let suma = a + b;
+          alert("La Suma es:" + suma);
+          return suma;
+        } else if (c == "resta") {
+          let resta = a - b;
+          alert("La Resta es:" + resta);
+          return resta;
+        } else if (c == "multiplicacion") {
+        } else if (c == "division") {
+        } else if (c == "salir") {
+          control = 0;
+        } else {
+          alert("Escogiste mal");
+        }
+      }
+
+      realizarOperacion(num1, num2, operacion);
+    }
+  </script>
+
+  <body></body>
+</html>
